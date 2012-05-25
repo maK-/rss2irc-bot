@@ -4,7 +4,7 @@ import socket, string, feedparser, os
 from threading import Timer
 
 #feed_list is a list of all of the rss feeds.
-feed_list = ["http://seclists.org/rss/bugtraq.rss","http://www.symantec.com/xml/rss/listings.jsp?lid=mixedsecurityrisks","http://www.symantec.com/xml/rss/listings.jsp?lid=advisories","http://technet.microsoft.com/en-us/security/rss/advisory", "http://www.exploit-db.com/rss.xml"]
+feed_list = ["http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=CiaranmaK"]
 feed_data = []
 feed_hasbeen = []
 configured = False
