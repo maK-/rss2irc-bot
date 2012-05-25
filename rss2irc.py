@@ -33,6 +33,7 @@ while(not configured):
 	elif setting=='N' or setting=='n' or setting=='no' or setting=='NO':
 		configured = True
 		net = str(raw_input('Irc network?: '))
+		port = 6667
 		port = int(raw_input('Irc port? (default=6667): '))
 		nick = str(raw_input('Bots nick? (8 characters or under): '))
 		channel = str(raw_input('Channel? (#name): '))
