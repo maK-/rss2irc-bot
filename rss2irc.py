@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: iso-8859-15 -*-
-import socket, string, feedparser, os
+import socket, string, feedparser, os, time
 from threading import Timer
 
 #feed_list is a list of all of the rss feeds.
@@ -71,6 +71,7 @@ def feed_refresh():
 			else:
 				feed_data.append(m)
 				if(first_time == False):
+					time.sleep(1)
 					msg(channel, m)
 				
 #display n latest feeds from feedlist
@@ -88,6 +89,7 @@ def last_feed(n):
 		
 def show_feeds():
     for feed in feed_list:
+		time.sleep(1)
         msg(channel,feed)
 
 #check for feed update every 15 mins.
