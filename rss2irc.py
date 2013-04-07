@@ -70,9 +70,9 @@ def feed_refresh():
 				pass
 			else:
 				feed_data.append(m)
-				if(first_time == False):
-					time.sleep(1)
-					msg(channel, m)
+                if(first_time == False):
+                    time.sleep(1)
+                    msg(channel, m)
 				
 #display n latest feeds from feedlist
 def last_feed(n):
@@ -89,7 +89,7 @@ def last_feed(n):
 		
 def show_feeds():
     for feed in feed_list:
-		time.sleep(1)
+        time.sleep(1)
         msg(channel,feed)
 
 #check for feed update every 15 mins.
