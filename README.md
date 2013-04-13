@@ -3,7 +3,6 @@ rss2irc-bot
 
 A simple bot that prints user specified rss feeds into an Irc channel of choice.
 
-
 	--The commands are--
 	!help - Display a command menu in channel.
 	!feed [add|remove|list] - add/remove/list items in feed list.
